@@ -1,0 +1,86 @@
+/* Fade-in animation */
+.fade-in {
+    -fx-opacity: 0;
+    -fx-transition: opacity 1.2s ease-in;
+    -fx-opacity: 1;
+}
+
+/* Title and subtitle */
+.title {
+    -fx-font-size: 56px;
+    -fx-font-family: "Arial Bold";
+    -fx-text-fill: #2c3e50;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);
+}
+
+.subtitle {
+    -fx-font-size: 24px;
+    -fx-font-style: italic;
+    -fx-text-fill: #3742fa;
+}
+
+/* Form container */
+.form-box {
+    -fx-background-color: #f7f1e3;
+    -fx-background-radius: 10;
+    -fx-padding: 30;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 15, 0, 0, 5);
+}
+
+/* Labels */
+.form-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+/* Inputs */
+.input {
+    -fx-pref-height: 29px;
+    -fx-pref-width: 458px;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #bdc3c7;
+    -fx-padding: 5;
+    -fx-font-size: 14px;
+    -fx-transition: border-color 0.3s ease;
+}
+
+.input:focused {
+    -fx-border-color: #3742fa;
+}
+
+/* ComboBox */
+.combo {
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #808e9b;
+    -fx-background-color: #808e9b;
+    -fx-padding: 5;
+}
+
+/* Button */
+.login-button {
+    -fx-background-color: #3742fa;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-padding: 10 20;
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(52,152,219,0.4), 8, 0, 0, 3);
+    -fx-transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    -fx-background-color: #2f3ff5;
+}
+
+/* Forgot password */
+.forgot {
+    -fx-text-fill: #ff3f34;
+    -fx-cursor: hand;
+    -fx-font-size: 20px;
+    -fx-underline: true;
+    -fx-background-color: transparent;
+}

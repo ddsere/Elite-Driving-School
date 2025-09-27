@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" styleClass="root" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.elitedrivingschool.controller.LoginController">
+    <children>
+        <!-- Simple background -->
+        <Rectangle arcHeight="0.0" arcWidth="0.0" fill="WHITE" height="600.0" styleClass="background-rectangle" width="900.0" />
+
+        <!-- Login card -->
+        <VBox alignment="CENTER" layoutX="300.0" layoutY="150.0" prefHeight="300.0" prefWidth="300.0" spacing="20.0" styleClass="login-card">
+            <!-- Header -->
+            <VBox alignment="CENTER" spacing="5.0">
+                <Label styleClass="main-title" text="ELITE DRIVING SCHOOL">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+                <Label styleClass="subtitle" text="Sign in to continue" />
+            </VBox>
+
+            <!-- Form -->
+            <VBox alignment="CENTER" prefWidth="260.0" spacing="15.0">
+                <!-- Role selection -->
+                <VBox spacing="3.0">
+                    <Label styleClass="form-label" text="Select Role" />
+                    <ComboBox fx:id="cmbRole" prefHeight="26.0" prefWidth="307.0" styleClass="form-combo" />
+                </VBox>
+
+                <!-- Username field -->
+                <VBox spacing="3.0">
+                    <Label styleClass="form-label" text="Username" />
+                    <TextField fx:id="txtUserName" prefHeight="35.0" prefWidth="260.0" promptText="Enter username" styleClass="form-input" />
+                </VBox>
+
+                <!-- Password field -->
+                <VBox spacing="3.0">
+                    <Label styleClass="form-label" text="Password" />
+                    <PasswordField fx:id="TxtPassword" prefHeight="35.0" prefWidth="260.0" promptText="Enter password" styleClass="form-input" />
+                </VBox>
+
+                <!-- Login button -->
+                <Button fx:id="btnButton" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="26.0" prefWidth="304.0" style="-fx-background-color: green;" styleClass="login-button" text="LOG IN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            </VBox>
+
+            <!-- Footer -->
+            <Label fx:id="forogotPasssword" styleClass="forgot-link" text="Forgot your password?" />
+        </VBox>
+    </children>
+</AnchorPane>

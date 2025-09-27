@@ -1,0 +1,46 @@
+/* dashboard.css */
+.root {
+    -fx-dark-blue: #0a192f;
+    -fx-darker-blue: #112240;
+    -fx-border-blue: #1d2f4d;
+    -fx-teal: #64ffda;
+    -fx-light-text: #ccd6f6;
+    -fx-gray-text: #8892b0;
+}
+
+/* Button hover effects for sidebar */
+.button:hover {
+    -fx-background-color: rgba(100, 255, 218, 0.1) !important;
+    -fx-text-fill: #64ffda !important;
+    -fx-border-color: #64ffda !important;
+    -fx-border-width: 1 !important;
+}
+
+/* Stats cards hover effects */
+.stats-card:hover {
+    -fx-border-color: #64ffda !important;
+    -fx-effect: dropshadow(gaussian, rgba(100, 255, 218, 0.2), 10, 0, 0, 0);
+}
+
+/* Smooth transitions */
+.button, .stats-card {
+    -fx-transition: all 0.3s ease;
+}
+
+/* Logout button specific style */
+#logoutButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #64ffda;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-border-color: #64ffda;
+    -fx-border-width: 1;
+    -fx-cursor: hand;
+}
+
+#logoutButton:hover {
+    -fx-background-color: #64ffda;
+    -fx-text-fill: #0a192f;
+}

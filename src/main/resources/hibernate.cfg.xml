@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/example_elite?createDatabaseIfNotExist=true
+        </property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Daham2002</property>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <property name="hibernate.show_sql">true</property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <mapping class="lk.ijse.elitedrivingschool.entity.User"/>
+        <mapping class="lk.ijse.elitedrivingschool.entity.Student"/>
+        <mapping class="lk.ijse.elitedrivingschool.entity.Course"/>
+        <mapping class="lk.ijse.elitedrivingschool.entity.Instructor"/>
+        <mapping class="lk.ijse.elitedrivingschool.entity.Payment"/>
+        <mapping class="lk.ijse.elitedrivingschool.entity.Lesson"/>
+
+    </session-factory>
+</hibernate-configuration>

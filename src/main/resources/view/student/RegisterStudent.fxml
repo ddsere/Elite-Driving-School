@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="694.0" prefWidth="1000.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.elitedrivingschool.controller.RegisterStudentController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="637.0" style="-fx-fill: WHITE;" width="1000.0" />
+
+        <VBox layoutX="150.0" layoutY="50.0" prefHeight="585.0" prefWidth="700.0" style="-fx-background-color: WHITE; -fx-padding: 40;">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="620.0" style="-fx-text-fill: BLACK; -fx-font-weight: bold;" text="STUDENT REGISTRATION">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="25.0" />
+                    </VBox.margin>
+                </Label>
+
+                <GridPane hgap="20" vgap="20">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="35" />
+                        <ColumnConstraints percentWidth="65" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints prefHeight="40" />
+                        <RowConstraints prefHeight="40" />
+                        <RowConstraints prefHeight="40" />
+                        <RowConstraints prefHeight="40" />
+                        <RowConstraints prefHeight="40" />
+                        <RowConstraints prefHeight="40" />
+                    </rowConstraints>
+
+                    <children>
+                        <Label style="-fx-text-fill: BLACK; -fx-font-weight: bold;" text="Registration No *">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="txtRegNo" disable="true" prefHeight="40.0" promptText="Auto-generated" style="-fx-padding: 10; -fx-font-size: 14; -fx-prompt-text-fill: #0d1a2f;" GridPane.columnIndex="1" />
+
+                        <Label style="-fx-text-fill: BLACK; -fx-font-weight: bold;" text="First Name *" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="txtFirstName" prefHeight="40.0" promptText="Enter First Name" style="-fx-padding: 10; -fx-font-size: 14; -fx-prompt-text-fill: #8892b0;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                        <Label style="-fx-text-fill: BLACK; -fx-font-weight: bold;" text="Last Name *" GridPane.rowIndex="2">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="txtLastName" prefHeight="40.0" promptText="Enter Last Name" style="-fx-padding: 10; -fx-font-size: 14; -fx-text-fill: #0d1a2f; -fx-prompt-text-fill: #8892b0;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                        <Label style="-fx-text-fill: BLACK; -fx-font-weight: bold;" text="Contact No *" GridPane.rowIndex="3">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="txtContact" prefHeight="40.0" promptText="07X XXX XXXX" style="-fx-padding: 10; -fx-font-size: 14; -fx-text-fill: #0d1a2f; -fx-prompt-text-fill: #8892b0;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                        <Label style="-fx-text-fill: BLACK; -fx-font-weight: bold;" text="Address *" GridPane.rowIndex="4">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="txtAddress" prefHeight="40.0" promptText="Enter your full address" style="-fx-padding: 10; -fx-font-size: 14; -fx-text-fill: #0d1a2f; -fx-prompt-text-fill: #8892b0;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                        <Label style="-fx-text-fill: BLACK; -fx-font-weight: bold;" text="Registration Date *" GridPane.rowIndex="5">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <DatePicker fx:id="datePickerRegDate" prefHeight="40.0" style="-fx-font-size: 14; -fx-text-fill: #0d1a2f;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                    </children>
+                </GridPane>
+
+                <HBox alignment="CENTER_RIGHT" spacing="15" style="-fx-padding: 30 0 0 0;">
+                    <children>
+                        <Button fx:id="btnReset" onAction="#btnResetOnAction" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: #1a2a43; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-cursor: hand; -fx-padding: 10 20;" text="Reset">
+                            <effect>
+                                <DropShadow color="rgba(75, 106, 154, 0.4)" offsetX="0.0" offsetY="0.0" radius="8.0" />
+                            </effect>
+                        </Button>
+                        <Button fx:id="btnRegister" onAction="#registerStudent" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: GREEN; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-cursor: hand; -fx-padding: 10 20;" text="Register" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+/* Button hover effects */
+.button:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+/* Sidebar button hover */
+.sidebar-button:hover {
+    -fx-background-color: #e9ecef !important;
+}
+
+/* Stats card hover */
+.stat-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 2);
+}
